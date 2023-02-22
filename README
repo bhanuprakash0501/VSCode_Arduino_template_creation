@@ -1,0 +1,21 @@
+Prerequisites:
+1. This is for MAC only at this point. 
+2. VSCode - Installed
+3. Add Arduino Extension to VSCode
+
+Add ESP32 board package for VSCode Arduino extension:
+1. Open Arduino Extension.
+2. Goto Settings and under Arduino additional URL’s add below URL’s
+    1. https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+    2. http://arduino.esp8266.com/stable/package_esp8266com_index.json
+3. Press F1 and type “>Arduino: Board Manager” and select Board Manager.
+4. Click Refresh package Indexes
+5. Search for ESP32 and install latest version of ESP32 libraries
+
+
+Creating Arduino Project in VSCode:
+1. Open VSCode
+2. Create new folder and open it in VSCode
+3. Add file_name.ino to the project. 
+4. Press F1 and type “Board Config” and select board as desired.. in my case it is Nano32 -> This should associate Arduino Extension to your project. 
+5. Press Arduino Upload button. It it should auto create c_cpp_properties.json file which key for this project. 
